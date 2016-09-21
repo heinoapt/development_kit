@@ -39,3 +39,11 @@
 .size-details {
   margin-left: 20px;
 }
+
+#seal {
+  display: none;
+  height: 100px;
+  width: 100%;
+  background: url('/img/Laughing-seal.png');
+  background-size: 100% 100%;
+}

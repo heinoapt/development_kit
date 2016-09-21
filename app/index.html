@@ -4,6 +4,7 @@
 	<title></title>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/llb.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
 <body style='background-color: #26C6DA'>
 	<div id="test_window_state"></div>
@@ -14,11 +15,14 @@
 		llb_app.addListener('window_state', function(data){
 			if(data.fullscreen)
 			{
-				document.getElementById("test_window_state").innerHTML = 'This is fullscreen'
+				document.getElementById("test_window_state").innerHTML = 'This is seal';
+				jQuery("#seal").show();
+
 			}
 			else
 			{
 				document.getElementById("test_window_state").innerHTML = 'This is just a tile'
+				jQuery("#seal").hide()
 			}
 		})
 
@@ -26,5 +30,7 @@
 			document.getElementById("test_location").innerHTML = "Location data : " + JSON.stringify(data)
 		})
 	</script>
+	<div id="seal"></div>
+
 </body>
 </html>
