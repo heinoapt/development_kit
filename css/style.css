@@ -39,3 +39,11 @@
 .size-details {
   margin-left: 20px;
 }
+
+#monk {
+  display: none;
+  height: 100px;
+  width: 100%;
+  background: url('/img/monk.jpg');
+  background-size: 100% 100%;
+}
